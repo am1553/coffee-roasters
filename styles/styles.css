@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+body .barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: 1;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    font-family: "Barlow", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    text-align: center;
+  }
+  body .barlow-bold {
+    font-family: "Barlow", sans-serif;
+  }
+  body h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  body h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  body h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  body h4 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+  body h5 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  body h6 {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
