@@ -1,0 +1,22 @@
+body {
+  .product-card {
+    h3 {
+      background: -webkit-linear-gradient(90deg, white, $grey);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 2rem 0;
+    }
+    h4 {
+      color: $dark-grey-blue;
+    }
+    p {
+      color: $dark-grey-blue;
+      padding: 1rem 5vw;
+    }
+    img {
+      width: 50%;
+      margin: 2rem 0;
+    }
+    margin-bottom: 6rem;
+  }
+}

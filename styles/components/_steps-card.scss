@@ -1,0 +1,33 @@
+body {
+  .steps-card {
+    margin-top: 7rem;
+    h4 {
+      color: $grey;
+    }
+
+    .step {
+      h1 {
+        color: $pale-orange;
+        margin: 5rem 0 1.5rem;
+      }
+      h3 {
+        color: $dark-grey-blue;
+      }
+      p {
+        margin: 1.5rem 0;
+      }
+    }
+
+    button {
+      margin: 3rem 0 6rem;
+      background-color: $dark-cyan;
+      border: none;
+      height: 3rem;
+      padding: 0 2rem;
+      border-radius: 10px;
+      h6 {
+        color: white;
+      }
+    }
+  }
+}

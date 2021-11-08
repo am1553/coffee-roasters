@@ -6,6 +6,16 @@
 }
 
 body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+
+body a {
+  cursor: pointer;
+}
+
+body {
   font-family: "Barlow", sans-serif;
   font-size: 1rem;
   line-height: 1.625rem;
@@ -63,5 +73,212 @@ body h6 {
     font-size: 1.125rem;
     line-height: 1.5625rem;
   }
+}
+
+body header {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5rem;
+}
+
+body main {
+  width: 100%;
+}
+
+body main .main-container {
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body main .main-container .intro-card {
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 7rem 1.4rem;
+  margin-bottom: 6rem;
+  background: url(/assets/home/mobile/image-hero-coffeepress.jpg) no-repeat;
+  background-size: cover;
+}
+
+body main .main-container .intro-card h2,
+body main .main-container .intro-card p {
+  color: #fefcf7;
+}
+
+body main .main-container .intro-card p {
+  margin: 2rem 0;
+}
+
+body main .main-container .intro-card button {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: #0e8784;
+  color: #fefcf7;
+  border: none;
+  cursor: pointer;
+}
+
+body .product-card {
+  margin-bottom: 6rem;
+}
+
+body .product-card h3 {
+  background: -webkit-linear-gradient(90deg, white, #83888f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 2rem 0;
+}
+
+body .product-card h4 {
+  color: #333d4b;
+}
+
+body .product-card p {
+  color: #333d4b;
+  padding: 1rem 5vw;
+}
+
+body .product-card img {
+  width: 50%;
+  margin: 2rem 0;
+}
+
+body main .perks-card {
+  position: relative;
+}
+
+body main .perks-card .why-us {
+  border-radius: 10px 10px 0 0;
+  background-color: #333d4b;
+  padding: 2rem 0;
+  position: relative;
+}
+
+body main .perks-card .why-us h3 {
+  color: #fefcf7;
+  padding: 2rem 0;
+}
+
+body main .perks-card .why-us p {
+  color: #fefcf7;
+}
+
+body main .perks-card .why-us::after {
+  content: "";
+  width: 100%;
+  height: 700px;
+  background-color: #2c343e;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  z-index: -1;
+}
+
+body main .perks-card .perks-wrapper .perk {
+  margin: 1.5rem;
+  background-color: #0e8784;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+body main .perks-card .perks-wrapper .perk img {
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+body main .perks-card .perks-wrapper .perk h4 {
+  color: #fefcf7;
+}
+
+body main .perks-card .perks-wrapper .perk p {
+  color: #fefcf7;
+  padding: 2rem 0;
+}
+
+body .steps-card {
+  margin-top: 7rem;
+}
+
+body .steps-card h4 {
+  color: #83888f;
+}
+
+body .steps-card .step h1 {
+  color: #fdd6ba;
+  margin: 5rem 0 1.5rem;
+}
+
+body .steps-card .step h3 {
+  color: #333d4b;
+}
+
+body .steps-card .step p {
+  margin: 1.5rem 0;
+}
+
+body .steps-card button {
+  margin: 3rem 0 6rem;
+  background-color: #0e8784;
+  border: none;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 10px;
+}
+
+body .steps-card button h6 {
+  color: white;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  background-color: #2c343e;
+  margin: 0 auto 3rem;
+}
+
+body footer .logo {
+  fill: red;
+  margin: 4rem 0;
+}
+
+body footer .logo img {
+  -webkit-filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(306deg) brightness(103%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(306deg) brightness(103%) contrast(101%);
+}
+
+body footer a {
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.92px;
+  text-transform: uppercase;
+  color: #83888f;
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+
+body footer .socials {
+  margin: 3rem 0;
+}
+
+body footer .socials img {
+  padding: 0 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
