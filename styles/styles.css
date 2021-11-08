@@ -15,6 +15,10 @@ body a {
   cursor: pointer;
 }
 
+body button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Barlow", sans-serif;
   font-size: 1rem;
@@ -88,6 +92,59 @@ body header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1.5rem;
+  position: relative;
+}
+
+body header button {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+}
+
+body header .navigation {
+  position: absolute;
+  top: -1000%;
+  background-color: white;
+  left: 0;
+  right: 0;
+  margin: 0 0.5rem;
+  height: 50vh;
+  -webkit-box-shadow: 0px 10vh 50px -10px white;
+          box-shadow: 0px 10vh 50px -10px white;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+body header .navigation nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .navigation nav a {
+  margin: 1.5rem 0;
+  text-decoration: none;
+  color: #333d4b;
+}
+
+body header .navigation::after {
+  content: "";
+  height: 30vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#83888f));
+  background: linear-gradient(white, #83888f);
+  opacity: 0.9;
+  top: 100%;
+  border-radius: 0 0 10px 10px;
 }
 
 body main {
