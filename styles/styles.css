@@ -160,7 +160,7 @@ body main .perks-card {
 body main .perks-card .why-us {
   border-radius: 10px 10px 0 0;
   background-color: #333d4b;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   position: relative;
 }
 
@@ -234,7 +234,7 @@ body .steps-card button {
   border: none;
   height: 3rem;
   padding: 0 2rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 body .steps-card button h6 {
