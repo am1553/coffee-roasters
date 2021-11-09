@@ -1,0 +1,19 @@
+body {
+  main {
+    .main-container {
+      .commitment {
+        margin-bottom: 7rem;
+        img {
+          height: 450px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+        h3 {
+          color: $dark-grey-blue;
+          margin: 1.5rem 0;
+        }
+      }
+    }
+  }
+}

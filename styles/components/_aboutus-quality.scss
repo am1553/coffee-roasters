@@ -1,0 +1,29 @@
+body {
+  main {
+    .main-container {
+      .quality {
+        margin-top: 13rem;
+        position: relative;
+        background: url(/assets/about/mobile/bg-quality.png) no-repeat;
+        background-size: cover;
+        padding: 10rem 0 3rem;
+        border-radius: 10px;
+        h4,
+        p {
+          color: $light-cream;
+          padding: 1rem 2rem;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          width: 80%;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -80px;
+          border-radius: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+}
