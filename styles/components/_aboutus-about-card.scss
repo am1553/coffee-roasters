@@ -4,7 +4,8 @@ body {
       .about-card {
         position: relative;
         overflow: hidden;
-        background: url(/assets/about/mobile/image-hero-whitecup.jpg) no-repeat;
+        background: url(../assets/about/mobile/image-hero-whitecup.jpg)
+          no-repeat;
         background-position: center;
         background-size: cover;
         height: 400px;
@@ -26,6 +27,7 @@ body {
           width: 100%;
           margin-top: 30%;
           padding: 0 1.5rem;
+          opacity: 0.8;
         }
         .overlay-effect {
           background-color: black;

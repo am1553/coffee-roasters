@@ -4,7 +4,7 @@ body {
       .quality {
         margin-top: 13rem;
         position: relative;
-        background: url(/assets/about/mobile/bg-quality.png) no-repeat;
+        background: url(../assets/about/mobile/bg-quality.png) no-repeat;
         background-size: cover;
         padding: 10rem 0 3rem;
         border-radius: 10px;
@@ -12,6 +12,7 @@ body {
         p {
           color: $light-cream;
           padding: 1rem 2rem;
+          opacity: 0.8;
         }
         img {
           position: absolute;

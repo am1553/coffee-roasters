@@ -159,6 +159,8 @@ body footer {
           flex-direction: column;
   width: 95%;
   background-color: #2c343e;
+  background: url(../assets/about/mobile/bg-quality.png) no-repeat;
+  background-size: cover;
   margin: 0 auto 3rem;
 }
 
@@ -217,6 +219,7 @@ body main .main-container .intro-card p {
 
 body main .main-container .intro-card p {
   margin: 2rem 0;
+  opacity: 0.8;
 }
 
 body main .main-container .intro-card button {
@@ -271,13 +274,15 @@ body main .perks-card .why-us h3 {
 
 body main .perks-card .why-us p {
   color: #fefcf7;
+  opacity: 0.8;
 }
 
 body main .perks-card .why-us::after {
   content: "";
   width: 100%;
   height: 700px;
-  background-color: #2c343e;
+  background: url(/assets/about/mobile/bg-quality.png) no-repeat;
+  background-size: cover;
   border-radius: 0 0 10px 10px;
   position: absolute;
   top: 100%;
@@ -305,6 +310,7 @@ body main .perks-card .perks-wrapper .perk h4 {
 body main .perks-card .perks-wrapper .perk p {
   color: #fefcf7;
   padding: 2rem 0;
+  opacity: 0.8;
 }
 
 body .steps-card {
@@ -326,6 +332,7 @@ body .steps-card .step h3 {
 
 body .steps-card .step p {
   margin: 1.5rem 0;
+  color: #333d4b;
 }
 
 body .steps-card button {
@@ -344,7 +351,7 @@ body .steps-card button h6 {
 body main .main-container .about-card {
   position: relative;
   overflow: hidden;
-  background: url(/assets/about/mobile/image-hero-whitecup.jpg) no-repeat;
+  background: url(../assets/about/mobile/image-hero-whitecup.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -368,6 +375,7 @@ body main .main-container .about-card p {
   width: 100%;
   margin-top: 30%;
   padding: 0 1.5rem;
+  opacity: 0.8;
 }
 
 body main .main-container .about-card .overlay-effect {
@@ -398,10 +406,14 @@ body main .main-container .commitment h3 {
   margin: 1.5rem 0;
 }
 
+body main .main-container .commitment p {
+  color: #333d4b;
+}
+
 body main .main-container .quality {
   margin-top: 13rem;
   position: relative;
-  background: url(/assets/about/mobile/bg-quality.png) no-repeat;
+  background: url(../assets/about/mobile/bg-quality.png) no-repeat;
   background-size: cover;
   padding: 10rem 0 3rem;
   border-radius: 10px;
@@ -411,6 +423,7 @@ body main .main-container .quality h4,
 body main .main-container .quality p {
   color: #fefcf7;
   padding: 1rem 2rem;
+  opacity: 0.8;
 }
 
 body main .main-container .quality img {
@@ -457,5 +470,6 @@ body main .main-container .headquarters .headquarter .span-wrapper {
 body main .main-container .headquarters .headquarter .span-wrapper span {
   font-size: 1rem;
   line-height: 1.625rem;
+  color: #333d4b;
 }
 /*# sourceMappingURL=styles.css.map */
