@@ -656,32 +656,56 @@ body main .main-container .order-summary button h6 {
 }
 
 body main .main-container .complete-order {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 00px;
+  left: 0;
+  right: 0;
+}
+
+body main .main-container .complete-order .overlay-effect {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.493);
+  z-index: -1;
+}
+
+body main .main-container .complete-order .complete-order-card {
   width: 90%;
-  margin: 0 auto 7rem;
+  height: 600px;
+  margin: 2rem auto 7rem;
   background-color: #fefcf7;
-  border-radius: 10px;
   overflow: hidden;
 }
 
-body main .main-container .complete-order header {
+body main .main-container .complete-order .complete-order-card header {
   background-color: #333d4b;
 }
 
-body main .main-container .complete-order header h4 {
+body main .main-container .complete-order .complete-order-card header h4 {
   color: #fefcf7;
 }
 
-body main .main-container .complete-order h5,
-body main .main-container .complete-order p {
+body main .main-container .complete-order .complete-order-card h5,
+body main .main-container .complete-order .complete-order-card p {
   text-align: left;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
-body main .main-container .complete-order h5 {
+body main .main-container .complete-order .complete-order-card h5 {
   margin: 3rem 0 1rem;
 }
 
-body main .main-container .complete-order button {
+body main .main-container .complete-order .complete-order-card h5 span {
+  color: #0e8784;
+}
+
+body main .main-container .complete-order .complete-order-card button {
   margin: 2rem 0;
   height: 3rem;
   width: 80%;
@@ -690,7 +714,7 @@ body main .main-container .complete-order button {
   background-color: #0e8784;
 }
 
-body main .main-container .complete-order button h6 {
+body main .main-container .complete-order .complete-order-card button h6 {
   color: #fefcf7;
 }
 /*# sourceMappingURL=styles.css.map */

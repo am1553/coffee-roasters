@@ -2,6 +2,35 @@
 // -- selectors
 const menuBtn = document.getElementById("menu-button");
 const menuBtnImg = menuBtn.children[0];
+
+// OPTION INPUT IN SUMMARY
+// -- text-selectors-inputs
+const preferenceInputText = document.querySelector(".preference-input");
+const typeInputText = document.querySelector(".type-input");
+const quantityInputText = document.querySelector(".quantity-input");
+const grindInputText = document.querySelector(".grind-input");
+const deliveryInputText = document.querySelector(".delivery-input");
+
+const preferenceInputTextId = document.getElementById("preference-input");
+const typeInputTextId = document.getElementById("type-input");
+const quantityInputTextId = document.getElementById("quantity-input");
+const grindInputTextId = document.getElementById("grind-input");
+const deliveryInputTextId = document.getElementById("delivery-input");
+
+// SUMMARY CREATE MY PLAN
+// --create plan button selector
+const creatMyPlan = document.getElementById("create-my-plan");
+const completeOrder = document.querySelector(".complete-order");
+// SHOW CHECKOUT
+creatMyPlan.addEventListener("click", () => {
+    if(completeOrder.style.display === "block") {
+        completeOrder.style.display = "none";
+    } else {
+        completeOrder.style.display = "block";
+        completeOrder.scrollIntoView();
+    }
+})
+
 // -- --eventlisteners
 menuBtn.addEventListener("click", ()=> {
     if(menuBtnImg.getAttribute("src") === "assets/shared/mobile/icon-hamburger.svg") {
@@ -94,21 +123,3 @@ for(let i = 0; i < accordionButton.length; i++) {
         })
     }
 }
-
-// OPTION INPUT IN SUMMARY
-// -- text-selectors-inputs
-const preferenceInputText = document.querySelector(".preference-input");
-const typeInputText = document.querySelector(".type-input");
-const quantityInputText = document.querySelector(".quantity-input");
-const grindInputText = document.querySelector(".grind-input");
-const deliveryInputText = document.querySelector(".delivery-input");
-
-const preferenceInputTextId = document.getElementById("preference-input");
-const typeInputTextId = document.getElementById("type-input");
-const quantityInputTextId = document.getElementById("quantity-input");
-const grindInputTextId = document.getElementById("grind-input");
-const deliveryInputTextId = document.getElementById("delivery-input");
-
-console.log(preferenceInputText);
-
-
