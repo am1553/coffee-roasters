@@ -2,10 +2,9 @@ body {
   main {
     .main-container {
       .complete-order {
-        display: none;
         position: absolute;
         z-index: 100;
-        top: 00px;
+        top: -1500%;
         left: 0;
         right: 0;
         .overlay-effect {

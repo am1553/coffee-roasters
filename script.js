@@ -3,6 +3,20 @@
 const menuBtn = document.getElementById("menu-button");
 const menuBtnImg = menuBtn.children[0];
 
+menuBtn.addEventListener("click", ()=> {
+    if(menuBtnImg.getAttribute("src") === "assets/shared/mobile/icon-hamburger.svg") {
+        menuBtnImg.setAttribute("src", "assets/shared/mobile/icon-close.svg");
+        document.querySelector(".navigation").style.top = "100px";
+    } else {
+        menuBtnImg.setAttribute("src", "assets/shared/mobile/icon-hamburger.svg");
+        document.querySelector(".navigation").style.top = "-1000%";
+    }
+})
+
+function navigatePlan() {
+    location.href = "plan.html";
+} 
+
 // OPTION INPUT IN SUMMARY
 // -- text-selectors-inputs
 const preferenceInputText = document.querySelector(".preference-input");
@@ -17,36 +31,12 @@ const quantityInputTextId = document.getElementById("quantity-input");
 const grindInputTextId = document.getElementById("grind-input");
 const deliveryInputTextId = document.getElementById("delivery-input");
 
-// SUMMARY CREATE MY PLAN
-// --create plan button selector
-const creatMyPlan = document.getElementById("create-my-plan");
-const completeOrder = document.querySelector(".complete-order");
-// SHOW CHECKOUT
-creatMyPlan.addEventListener("click", () => {
-    if(completeOrder.style.display === "block") {
-        completeOrder.style.display = "none";
-    } else {
-        completeOrder.style.display = "block";
-        completeOrder.scrollIntoView();
-    }
-})
 
-// -- --eventlisteners
-menuBtn.addEventListener("click", ()=> {
-    if(menuBtnImg.getAttribute("src") === "assets/shared/mobile/icon-hamburger.svg") {
-        menuBtnImg.setAttribute("src", "assets/shared/mobile/icon-close.svg");
-        document.querySelector(".navigation").style.top = "100px";
-    } else {
-        menuBtnImg.setAttribute("src", "assets/shared/mobile/icon-hamburger.svg");
-        document.querySelector(".navigation").style.top = "-1000%";
-    }
-})
 
 // TOGGLE OPEN CUSTOM OPTIONS
 // -- selectors
 const accordionButton = document.getElementsByClassName("heading-btn");
 
-// -- --function
 for(let i = 0; i < accordionButton.length; i++) {
 
     accordionButton[i].addEventListener("click", ()=> {
@@ -72,6 +62,11 @@ for(let i = 0; i < accordionButton.length; i++) {
                 accordionWrapper[k].classList.remove("selected");
             }
             accordionWrapper[j].classList.add("selected");
+            
+            document.getElementById("price-input").innerText = accordionWrapper[j].lastChild.previousSibling.children[0].innerText;
+            console.log(accordionWrapper[j].lastChild.previousSibling.children[0]);
+
+
 // -- -----------------------------------------------------adding text to inputText
             const preference = document.querySelectorAll(".preference-button");
             const bean = document.querySelectorAll(".bean-button");
@@ -123,3 +118,8 @@ for(let i = 0; i < accordionButton.length; i++) {
         })
     }
 }
+
+document.getElementById("create-my-plan").addEventListener("click", ()=> {
+    document.querySelector(".complete-order").style.top = "100px";
+    document.querySelector(".complete-order").scrollIntoView();
+})
