@@ -65,26 +65,26 @@
 
       <div class="custom">
 
-        <div class="preference accordion-slide">
+        <div class="preference">
           <button class="heading-btn">
             <h5>How do you drink your coffee?</h5>
             <img src="assets/plan/desktop/icon-arrow.svg" alt="">
           </button>
 
-          <div class="preference-wrapper">
-            <button class="subheading-btn">
+          <div class="preference-wrapper accordion-slide">
+            <button class="subheading-btn preference-button">
               <h4>Capsule</h4>
               <p>
                 Compatible with Nespresso systems and similar brewers
               </p>
             </button>
-            <button class="subheading-btn selected">
+            <button class="subheading-btn preference-button">
               <h4>Filter</h4>
               <p>
                 For pour over or drip methods like Aeropress, Chemex, and V60
               </p>
             </button>
-            <button class="subheading-btn">
+            <button class="subheading-btn preference-button">
               <h4>Espresso</h4>
               <p>
                 Dense and finely ground beans for an intense, flavorful experience
@@ -101,19 +101,19 @@
           </button>
 
           <div class="bean-wrapper accordion-slide">
-            <button class="subheading-btn">
+            <button class="subheading-btn bean-button">
               <h4>Single origin</h4>
               <p>
                 Distinct, high quality coffee from a specific family-owned farm
               </p>
             </button>
-            <button class="subheading-btn selected">
+            <button class="subheading-btn bean-button">
               <h4>Decaf</h4>
               <p>
                 Just like regular coffee, except the caffeine has been removed
               </p>
             </button>
-            <button class="subheading-btn">
+            <button class="subheading-btn bean-button">
               <h4>Blended</h4>
               <p>
                 Combination of two or three dark roasted beans of organic coffees
@@ -128,19 +128,19 @@
           </button>
 
           <div class="quantity-wrapper accordion-slide">
-            <button class="subheading-btn selected">
+            <button class="subheading-btn quantity-button">
               <h4>250g</h4>
               <p>
                 Perfect for the solo drinker. Yields about 12 delicious cups.
               </p>
             </button>
-            <button class="subheading-btn">
+            <button class="subheading-btn quantity-button">
               <h4>500g</h4>
               <p>
                 Perfect for the solo drinker. Yields about 12 delicious cups.
               </p>
             </button>
-            <button class="subheading-btn">
+            <button class="subheading-btn quantity-button">
               <h4>1000g</h4>
               <p>
                 Perfect for offices and events. Yields about 90 delightful cups.
@@ -157,19 +157,19 @@
           </button>
 
           <div class="grind-wrapper accordion-slide">
-            <button class="subheading-btn">
+            <button class="subheading-btn grind-button">
               <h4>Wholebean</h4>
               <p>
                 Best choice if you cherish the full sensory experience
               </p>
             </button>
-            <button class="subheading-btn">
+            <button class="subheading-btn grind-button">
               <h4>Filter</h4>
               <p>
                 For drip or pour-over coffee methods such as V60 or Aeropress
               </p>
             </button>
-            <button class="subheading-btn selected">
+            <button class="subheading-btn grind-button">
               <h4>Cafetiére</h4>
               <p>
                 Course ground beans specially suited for french press coffee
@@ -185,19 +185,19 @@
           </button>
 
           <div class="delivery-wrapper accordion-slide">
-            <button class="subheading-btn selected">
+            <button class="subheading-btn delivery-button">
               <h4>Every week</h4>
               <p>
                 $14.00 per shipment. Includes free first-class shipping.
               </p>
             </button>
-            <button class="subheading-btn">
+            <button class="subheading-btn delivery-button">
               <h4>Every 2 weeks</h4>
               <p>
                 $17.25 per shipment. Includes free priority shipping.
               </p>
             </button>
-            <button class="subheading-btn">
+            <button class="subheading-btn delivery-button">
               <h4>Every month</h4>
               <p>
                 $22.50 per shipment. Includes free priority shipping.
@@ -211,8 +211,8 @@
         <div class="order">
           <span class="ordersum-text">Order Summary</span>
           <h5 class="summary">
-            “I drink coffee <span id="preference-input"></span>, with a <span id="type-input"></span> type of bean. <span id="quantity-input"></span> ground ala <span id="grind-input"></span>, 
-            sent to me <span id="delivery-input"></span>.”
+            “I drink coffee <span class="preference-input"></span>, with a <span class="type-input"></span> type of bean. <span class="quantity-input"></span> ground ala <span class="grind-input"></span>, 
+            sent to me <span class="delivery-input"></span>.”
           </h5>
         </div>
         <button><h6>Create my plan!</h6></button>

@@ -619,7 +619,8 @@ body main .main-container .order-summary {
 }
 
 body main .main-container .order-summary .order {
-  background: url(../assets/plan/mobile/bg-order-summary.png);
+  background: url(../assets/plan/mobile/bg-order-summary.png) no-repeat;
+  background-size: cover;
   width: 100%;
   padding: 0 2rem 4rem;
   margin-bottom: 2rem;
