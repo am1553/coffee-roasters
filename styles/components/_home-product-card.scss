@@ -1,5 +1,7 @@
 body {
   .product-card {
+    width: 90%;
+    margin: 0 auto;
     h3 {
       background: -webkit-linear-gradient(90deg, white, $grey);
       -webkit-background-clip: text;

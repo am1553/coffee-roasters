@@ -8,7 +8,14 @@
 body {
   width: 100%;
   min-height: 100vh;
-  padding: 0 1rem;
+}
+
+body main {
+  width: 100%;
+}
+
+body main .main-container {
+  width: 100%;
 }
 
 body a {
@@ -109,7 +116,7 @@ body header .navigation {
   right: 0;
   margin: 0 auto;
   height: 300px;
-  width: 95%;
+  width: 90%;
   -webkit-box-shadow: 0px 10vh 50px 50px white;
           box-shadow: 0px 10vh 50px 50px white;
   -webkit-transition: all 350ms ease;
@@ -157,7 +164,7 @@ body footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 95%;
+  width: 90%;
   background-color: #2c343e;
   background: url(../assets/about/mobile/bg-quality.png) no-repeat;
   background-size: cover;
@@ -192,22 +199,16 @@ body footer .socials img {
   padding: 0 1rem;
 }
 
-body main {
-  width: 100%;
-}
-
 body main .main-container {
-  width: 95%;
-  margin: 0 auto;
   overflow-x: hidden;
 }
 
 body main .main-container .intro-card {
   height: 500px;
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
   padding: 7rem 1.4rem;
-  margin-bottom: 6rem;
+  margin: 0 auto 7rem;
   background: url(../assets/home/mobile/image-hero-coffeepress.jpg) no-repeat;
   background-size: cover;
 }
@@ -232,6 +233,8 @@ body main .main-container .intro-card button {
 }
 
 body .product-card {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 6rem;
 }
 
@@ -258,6 +261,8 @@ body .product-card img {
 
 body main .perks-card {
   position: relative;
+  width: 90%;
+  margin: 0 auto;
 }
 
 body main .perks-card .why-us {
@@ -314,7 +319,8 @@ body main .perks-card .perks-wrapper .perk p {
 }
 
 body .steps-card {
-  margin-top: 7rem;
+  width: 90%;
+  margin: 7rem auto 0;
 }
 
 body .steps-card h4 {
@@ -355,8 +361,9 @@ body main .main-container .about-card {
   background-position: center;
   background-size: cover;
   height: 400px;
+  width: 90%;
+  margin: 0 auto 7rem;
   border-radius: 10px;
-  margin-bottom: 7rem;
 }
 
 body main .main-container .about-card h4,
@@ -390,6 +397,8 @@ body main .main-container .about-card .overlay-effect {
 }
 
 body main .main-container .commitment {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 7rem;
 }
 
@@ -411,7 +420,8 @@ body main .main-container .commitment p {
 }
 
 body main .main-container .quality {
-  margin-top: 13rem;
+  width: 90%;
+  margin: 13rem auto 0;
   position: relative;
   background: url(../assets/about/mobile/bg-quality.png) no-repeat;
   background-size: cover;
@@ -419,7 +429,11 @@ body main .main-container .quality {
   border-radius: 10px;
 }
 
-body main .main-container .quality h4,
+body main .main-container .quality h4 {
+  color: #fefcf7;
+  padding: 1rem 2rem;
+}
+
 body main .main-container .quality p {
   color: #fefcf7;
   padding: 1rem 2rem;
@@ -439,7 +453,8 @@ body main .main-container .quality img {
 }
 
 body main .main-container .headquarters {
-  margin: 7rem 0;
+  width: 90%;
+  margin: 7rem auto;
 }
 
 body main .main-container .headquarters h5 {
@@ -471,5 +486,210 @@ body main .main-container .headquarters .headquarter .span-wrapper span {
   font-size: 1rem;
   line-height: 1.625rem;
   color: #333d4b;
+}
+
+body main .main-container .custom {
+  width: 90%;
+  margin: 7rem auto;
+}
+
+body main .main-container .custom .heading-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: transparent;
+  margin: 2rem 0;
+}
+
+body main .main-container .custom .heading-btn h5 {
+  text-align: left;
+  color: #83888f;
+}
+
+body main .main-container .custom .heading-btn img {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+body main .main-container .custom .subheading-btn {
+  text-align: left;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+body main .main-container .custom .subheading-btn h4 {
+  margin: 0 0 1rem;
+  color: #333d4b;
+}
+
+body main .main-container .custom .subheading-btn p {
+  font-size: 1rem;
+  color: #333d4b;
+}
+
+body main .main-container .custom .accordion-slide {
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body main .main-container .custom .selected {
+  background-color: #0e8784;
+}
+
+body main .main-container .custom .selected h4 {
+  color: #fefcf7;
+}
+
+body main .main-container .custom .selected p {
+  color: #fefcf7;
+}
+
+body main .main-container .plan-card {
+  background: url(/assets/plan/mobile/image-hero-blackcup.jpg) no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 90%;
+  margin: 0 auto 7rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1.5rem;
+}
+
+body main .main-container .plan-card h2 {
+  color: #fefcf7;
+  margin-bottom: 2rem;
+}
+
+body main .main-container .plan-card p {
+  color: #fefcf7;
+  opacity: 0.8;
+}
+
+body main .main-container .steps-wrapper {
+  background: url(../assets/about/mobile/bg-quality.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 0rem 1rem 4rem;
+  border-radius: 10px;
+}
+
+body main .main-container .steps-wrapper .step h1 {
+  color: #fdd6ba;
+  padding-top: 4rem;
+}
+
+body main .main-container .steps-wrapper .step h3 {
+  color: #fefcf7;
+  margin: 2rem 0;
+}
+
+body main .main-container .steps-wrapper .step p {
+  color: #fefcf7;
+  opacity: 0.8;
+}
+
+body main .main-container .order-summary {
+  width: 90%;
+  margin: 0 auto 7rem;
+}
+
+body main .main-container .order-summary .order {
+  background: url(/assets/plan/mobile/bg-order-summary.png);
+  width: 100%;
+  padding: 0 2rem 4rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+body main .main-container .order-summary .order .ordersum-text {
+  color: #83888f;
+  display: block;
+  text-align: left;
+  padding: 2rem 0;
+}
+
+body main .main-container .order-summary .order h5 {
+  text-align: left;
+  color: #fefcf7;
+}
+
+body main .main-container .order-summary .order h5 span {
+  color: #0e8784;
+}
+
+body main .main-container .order-summary button {
+  background: #0e8784;
+  width: 70%;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+}
+
+body main .main-container .order-summary button h6 {
+  color: #fefcf7;
+}
+
+body main .main-container .complete-order {
+  width: 90%;
+  margin: 0 auto 7rem;
+  background-color: #fefcf7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+body main .main-container .complete-order header {
+  background-color: #333d4b;
+}
+
+body main .main-container .complete-order header h4 {
+  color: #fefcf7;
+}
+
+body main .main-container .complete-order h5,
+body main .main-container .complete-order p {
+  text-align: left;
+  padding: 0 1.5rem;
+}
+
+body main .main-container .complete-order h5 {
+  margin: 3rem 0 1rem;
+}
+
+body main .main-container .complete-order button {
+  margin: 2rem 0;
+  height: 3rem;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  background-color: #0e8784;
+}
+
+body main .main-container .complete-order button h6 {
+  color: #fefcf7;
 }
 /*# sourceMappingURL=styles.css.map */

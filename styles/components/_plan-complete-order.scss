@@ -1,0 +1,38 @@
+body {
+  main {
+    .main-container {
+      .complete-order {
+        width: 90%;
+        margin: 0 auto 7rem;
+        background-color: $light-cream;
+        border-radius: 10px;
+        overflow: hidden;
+        header {
+          background-color: $dark-grey-blue;
+          h4 {
+            color: $light-cream;
+          }
+        }
+        h5,
+        p {
+          text-align: left;
+          padding: 0 1.5rem;
+        }
+        h5 {
+          margin: 3rem 0 1rem;
+        }
+        button {
+          margin: 2rem 0;
+          height: 3rem;
+          width: 80%;
+          border-radius: 5px;
+          border: none;
+          background-color: $dark-cyan;
+          h6 {
+            color: $light-cream;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+body {
+  main {
+    .main-container {
+      .custom {
+        width: 90%;
+        margin: 7rem auto;
+
+        .heading-btn {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: none;
+          background: transparent;
+          margin: 2rem 0;
+          h5 {
+            text-align: left;
+            color: $grey;
+          }
+          img {
+            transition: all 500ms ease;
+          }
+        }
+        .subheading-btn {
+          text-align: left;
+          padding: 1.5rem;
+          border-radius: 10px;
+          border: none;
+          width: 100%;
+          margin-bottom: 1rem;
+          h4 {
+            margin: 0 0 1rem;
+            color: $dark-grey-blue;
+          }
+          p {
+            font-size: 1rem;
+            color: $dark-grey-blue;
+          }
+        }
+
+        .accordion-slide {
+          overflow: hidden;
+          height: 0px;
+          transition: all 1s ease;
+        }
+
+        .selected {
+          background-color: $dark-cyan;
+          h4 {
+            color: $light-cream;
+          }
+          p {
+            color: $light-cream;
+          }
+        }
+      }
+    }
+  }
+}

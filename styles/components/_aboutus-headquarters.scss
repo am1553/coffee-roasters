@@ -2,7 +2,8 @@ body {
   main {
     .main-container {
       .headquarters {
-        margin: 7rem 0;
+        width: 90%;
+        margin: 7rem auto;
         h5 {
           background: -webkit-linear-gradient(90deg, white, $grey);
           -webkit-background-clip: text;
