@@ -22,11 +22,11 @@ for(let i = 0; i < accordionButton.length; i++) {
 
     accordionButton[i].addEventListener("click", ()=> {
         
-        if(accordionButton[i].nextElementSibling.style.height === "500px") {
+        if(accordionButton[i].nextElementSibling.style.height === "450px") {
             accordionButton[i].nextElementSibling.style.height = "0px"
             accordionButton[i].children[1].style.transform = "rotate(0deg)"
         } else {
-            accordionButton[i].nextElementSibling.style.height = "500px"
+            accordionButton[i].nextElementSibling.style.height = "450px"
             accordionButton[i].children[1].style.transform = "rotate(180deg)"
         }
     })
@@ -40,7 +40,10 @@ for(let i = 0; i < accordionButton.length; i++) {
     for(let z = 0; z < accordionWrapper.length; z++) {
             accordionWrapper[z].addEventListener("click", ()=> {
                 
-                accordionWrapper[z].classList.toggle("selected");
+                for(let j = 0; j < accordionWrapper.length; j++) {
+                    accordionWrapper[j].classList.remove("selected");
+                }
+                accordionWrapper[z].classList.add("selected");
                 
             })
     }
